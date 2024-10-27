@@ -2,15 +2,16 @@
 [![Maven Central](https://img.shields.io/badge/Maven%20Central-1.2.2-blue)](https://mvnrepository.com/artifact/com.giraone.rules/spel-on-json)
 [![GitHub issues](https://img.shields.io/github/issues/giraone/spel-on-json)](https://github.com/giraone/spel-on-json/issues)
 [![GitHub stars](https://img.shields.io/github/stars/giraone/spel-on-json)](https://github.com/giraone/spel-on-json/stargazers)
-[![Platform](https://img.shields.io/badge/platform-jre8%2B-blue)](https://github.com/giraone/spel-on-json/pom.xml)
+[![Platform](https://img.shields.io/badge/platform-jre17%2B-blue)](https://github.com/giraone/spel-on-json/pom.xml)
 
 # Spel on JSON
 
 Library for template replacements based on
 
 - [SpEL](https://docs.spring.io/spring-framework/reference/core/expressions.html) as the expression language
-- *JSON* or `Map<String,Object>` as the source for variable data input 
-- **TODO:** Use *JSON pointer* notation to access the source
+- *JSON* or `Map<String,Object>` as the source for variable data input
+
+It is also planned use *JSON pointer* notation to access the source.
 
 ## Hints
 
