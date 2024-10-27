@@ -1,0 +1,7 @@
+Hello ${'Jimmy'.substring(0,3)},
+
+you are invited to my birthday in ${data.location.toUpperCase()}.
+I am now ${data.sender.age}.
+
+Yours sincerly,
+${data.sender.name}
