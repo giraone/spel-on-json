@@ -8,10 +8,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import javax.crypto.SecretKey;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.Map;
@@ -23,8 +20,6 @@ class SpelConverterTest {
     private static final ObjectMapper OBJECT_MAPPER = ObjectMapperBuilder.build();
     private static final TypeReference<Map<String, Object>> MAP = new TypeReference<>() {
     };
-
-    private static SecretKey SECRET_KEY;
 
     @Test
     void convert_simple_usingMap() {

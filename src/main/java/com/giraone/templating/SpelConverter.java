@@ -17,8 +17,8 @@ public class SpelConverter {
     private static final TypeReference<Map<String, Object>> MAP = new TypeReference<>() {
     };
 
-    // Look for ${x}, where x is no '}'
-    private static final Pattern PATTERN = Pattern.compile("\\$\\{([^\\}]+)}");
+    // Look for ${spelExpression}, where spelExpression is a character sequence without any '}'
+    private static final Pattern PATTERN = Pattern.compile("\\$\\{([^}]+)}");
 
     public static String convert(String template, String jsonData, ObjectMapper objectMapper) throws JsonProcessingException {
         return convert(template, objectMapper.readValue(jsonData, MAP));
